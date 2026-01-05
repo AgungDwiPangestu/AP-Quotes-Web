@@ -1,0 +1,46 @@
+# Ignore database configuration with sensitive data
+config/database.php
+
+# Ignore uploaded files
+assets/images/uploads/*
+!assets/images/uploads/.gitkeep
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore backup files
+*.bak
+*.old
+*.backup
+*~
+
+# Ignore logs
+*.log
+error_log
+access_log
+
+# Ignore temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Ignore vendor (if using Composer)
+vendor/
+composer.lock
+
+# Ignore node_modules (if using npm)
+node_modules/
+package-lock.json
+
+# Environment files
+.env
+.env.local

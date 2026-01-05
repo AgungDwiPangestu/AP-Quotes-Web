@@ -1,0 +1,19 @@
+# Database Configuration Template
+# Copy this file to database.php and fill in your credentials
+
+<?php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'your_username_here');
+define('DB_PASS', 'your_password_here');
+define('DB_NAME', 'ap_quotes');
+
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$conn->set_charset("utf8mb4");
+
+if ($conn->connect_error) {
+    error_log("Connection failed: " . $conn->connect_error);
+    die("Maaf, terjadi kesalahan koneksi database.");
+}
+
+// Database tables creation code here...
+?>
